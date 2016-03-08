@@ -70,6 +70,7 @@ describe('handleHistory', function () {
         jsdom.env('<html><body></body></html>', [], function (err, window) {
             if (err) {
                 done(err);
+                return;
             }
             global.document = window.document;
             global.window = window;

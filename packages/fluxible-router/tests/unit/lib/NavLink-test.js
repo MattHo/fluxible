@@ -38,6 +38,7 @@ describe('NavLink', function () {
             done: function (err, window) {
                 if (err) {
                     done(err);
+                    return;
                 }
                 global.document = window.document;
                 global.window = window;
